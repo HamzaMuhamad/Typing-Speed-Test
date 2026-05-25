@@ -1,0 +1,6 @@
+# Allow all search engine web crawlers to index the website
+User-agent: *
+Allow: /
+
+# Point to your sitemap if you have one later (optional)
+# Sitemap: http://localhost:4173/sitemap.xml

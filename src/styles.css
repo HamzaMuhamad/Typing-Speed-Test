@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Sora";
+  src: url("/assets/fonts/Sora/static/Sora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Sora";
+  src: url("/assets/fonts/Sora/static/Sora-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Sora";
+  src: url("/assets/fonts/Sora/static/Sora-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sora: "Sora"
+}
+
+
+.radio-input {
+  @apply appearance-none;
+}
+
+.radio-input + label {
+  @apply border-gray-700 border-2  px-1 py-0.5 rounded-md cursor-pointer duration-300 text-xs
+}
+.radio-input:checked + label {
+  @apply  border-blue-400 text-blue-400
+}
+
+.current-alpha {
+  @apply bg-gray-500/50 rounded-xs ;
+}
+
+.wrong-alpha {
+  @apply text-red-500  border-b-3 ;
+}
+
+.right-alpha {
+  @apply text-green-500 ;
+}
+
+.no-ligatures {
+  font-variant-ligatures: none;
+}
+
+
+
+/* Start LOGIN PAGE */
+
+.continue-with-btn {
+  @apply grow flex items-center gap-2 border border-[#334155] rounded-lg justify-center text-sm py-2 leading-5 cursor-pointer duration-300 hover:bg-[#94A3B805]
+}
+
+.login {
+  @apply border border-[#10B981] bg-[#10B98190] hover:bg-[#10B981] duration-300 rounded-full px-3 py-1 cursor-pointer text-xs
+}
+
+
+.signup {
+  @apply border border-[#10B981] hover:text-[#10B981] rounded-full px-3 py-1 cursor-pointer duration-300 text-xs
+}
+
+
+
+/* End LOGIN PAGE */
