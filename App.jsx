@@ -8,7 +8,7 @@ const Signin = lazy(() => import("/src/components/Login-signup"))
 
 const root = createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Typing-Speed-Test">
 
 
     <Suspense fallback={<div className="loading-spinner" />}>
